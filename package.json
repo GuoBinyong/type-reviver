@@ -1,24 +1,29 @@
 {
-  "name": "json-tls",
-  "version": "1.0.2",
-  "description": "json-tls 提供了JSON相关的工具，如:customJSONStringify、customJSONParse 等",
-  "main": "dist/json-tls.cjs.js",
-  "module": "dist/json-tls.es.js",
+  "name": "type-reviver",
+  "version": "1.0.0",
+  "description": "type-reviver 提供了处理 TypeRevivers 类型数据的相关工具",
+  "main": "dist/type-reviver.cjs.js",
+  "module": "dist/type-reviver.es.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
-  "homepage": "https://github.com/GuoBinyong/json-tls#readme",
+  "homepage": "https://github.com/GuoBinyong/type-reviver#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GuoBinyong/json-tls"
+    "url": "https://github.com/GuoBinyong/type-reviver"
   },
   "keywords": [
+    "reviver",
+    "Type Reviver",
     "JSON",
-    "tools",
-    "JSON tools",
-    "json 工具",
-    "公共代码",
+    "JSON Reviver",
     "stringify",
-    "parse"
+    "parse",
+    "stringify Reviver",
+    "parse Reviver",
+    "json-tls",
+    "json tools",
+    "custom JSON",
+    "deep copy"
   ],
   "author": "郭斌勇",
   "license": "ISC",
