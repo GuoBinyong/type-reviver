@@ -212,3 +212,18 @@ export function toTypeReviverFlatMap<Reviver>(typeRevivers:TypeRevivers<Reviver>
     let flatArr = toTypeReviverFlatArray(typeRevivers);
     return new Map(flatArr);
 }
+
+
+/**
+ * 将 多个 TypeRevivers 合并成 TypeReviverArray
+ * @param typeReviversArr
+ */
+export function mergeTypeRevivers<Reviver>(...typeReviversArr:(TypeRevivers<Reviver>|null|undefined)[]):TypeReviverArray<Reviver> {
+   return  typeReviversArr.reduce(function (merdTRArr:TypeReviverArray<Reviver>,typeRevivers) {
+       if (typeRevivers){
+           let trArr = toTypeReviverArray(typeRevivers);
+           return merdTRArr.concat(trArr);
+       }
+       return merdTRArr;
+    },[]);
+}
