@@ -1,6 +1,6 @@
 {
   "name": "type-reviver",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "type-reviver 提供了处理 TypeRevivers 类型数据的相关工具",
   "main": "dist/type-reviver.cjs.js",
   "module": "dist/type-reviver.es.js",

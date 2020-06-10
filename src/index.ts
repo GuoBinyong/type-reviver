@@ -36,6 +36,15 @@ export type TypeReviverFlatMap<Reviver> = Map<DataType,Reviver>;
 export type TypeRevivers<Reviver> = TypeReviverArray<Reviver> | TypeReviverObject<Reviver> | TypeReviverMap<Reviver>;
 
 
+/**
+ * 预置TypeReviverMap类型
+ */
+export interface PresetTypeReviverMap<Reviver> {
+    presetTypeReviverMap:TypeReviverMap<Reviver>;  //预置的 TypeReviverMap
+}
+
+
+
 
 /**
  * 将 typeRevivers 转成 TypeReviverArray
